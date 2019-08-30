@@ -1,0 +1,27 @@
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Container{
+    width: 60%;
+    margin: auto;
+    padding: 15px;
+    background: white;
+    text-align: center;
+}
+
+.title{
+    font-size: 30px;
+}
+
+.canvasContainer{
+    height: 45vh;
+    text-align: left;
+}
+
+.graphic{
+    height: 30vh;
+}

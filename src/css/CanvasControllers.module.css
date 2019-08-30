@@ -1,0 +1,216 @@
+
+.canvasControllers{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.radiosContainer{
+    background: #d3d4e0;
+    padding: 2px 0px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.radiosTitle{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.radiosLabel{
+    margin-left: 20px;
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.radio{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color:white;
+    border-radius: 50%;
+}
+
+
+.radiosLabel:hover .radio ~ .checkmark{
+    background: #2196F3;
+}
+
+.radiosLabel .radio:checked ~ .checkmark{
+    background: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radiosLabel .radio:checked ~ .checkmark::after{
+    display: block;
+}
+
+.radiosLabel .checkmark:after {
+    top: 4.5px;
+    left: 4.5px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+}
+
+.rangeContainer{
+    background: #d3d4e0;
+    padding: 2px 0px;
+    margin-bottom: 5px;
+}
+
+.rangeTitle{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.rangeText{
+    display: inline-block;
+    font-weight: 530;
+}
+
+.slideContainer{
+    width: 75%;
+    display: inline-block;
+    margin: 0px 0px 5px 0px;
+}
+
+.range{
+    appearance: none;
+    width: 90%;
+    height: 5px;
+    background: white;
+    outline: none;
+}
+
+.range::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background:#d3d4e0;
+    cursor: pointer; 
+}
+
+.inputContainer{
+    background: #d3d4e0;
+    padding: 5px 0px;
+    margin-bottom: 15px;
+}
+
+.inputTitle{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.input{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    width: 80%;
+    margin-bottom: 5px;
+    padding: 5px 0px;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.initButton{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 5px;
+    border: none;
+    background: rgb(160, 160, 160);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.initButton:hover{
+    background: rgb(18, 110, 185);
+    cursor: pointer;
+}
+
+.initButton:focus{
+    outline: none;
+}
+
+.startButton{
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: #2196F3;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.startButton:hover{
+    background: rgb(18, 110, 185);
+    cursor: pointer;
+}
+
+.startButton:focus{
+    outline: none;
+}
+
+.reloadButton{
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: red;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.reloadButton:hover{
+    background: rgb(184, 0, 0);
+    cursor: pointer;
+}
+
+.reloadButton:focus{
+    outline: none;
+}
+
+.restartCanvas{
+    width: 50%;
+    height: 30px;
+    border: white 2px;
+    background:none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.restartCanvas:hover{
+    background: rgb(184, 0, 0);
+    cursor: pointer;
+}
+
+.restartCanvas:focus{
+    outline: none;
+}
